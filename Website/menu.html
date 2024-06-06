@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Little Vegan Feast - Events</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inter:wght@400&family=Jacques+Francois&display=swap" rel="stylesheet">
+  
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #f4f4f4;
+        }
+
+
+        .navbar {
+        background-color: #ffffff; /* Very white background color */
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+        position: fixed; /* Frame stays fixed during scroll */
+        top: 0;
+        width: 100%; /* Full width */
+        z-index: 1; /* Ensure it's above other content */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the content horizontally */
+        }
+        .navbar-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: -20px; /* Reduce bottom margin */
+        }
+        .navbar-brand {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        }
+        .navbar-brand img {
+        margin-left: 20px; /* Add some space on the left of the icon */
+        }
+        .navbar-links {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px; /* Max width for larger screens */
+        padding: 0 20px; /* Add padding to the left and right */
+        margin-top: -10px; /* Reduce top margin */
+        }
+        .navbar-nav .nav-link {
+        font-family: 'Inter', sans-serif; /* Use Inter font */
+        font-size: 30px; /* Set font size to 30px */
+        width: auto; /* Remove fixed width */
+        }
+        .navbar-nav .nav-link.active {
+        font-weight: bold; /* Make the active link bold */
+        }
+        .title {
+        font-family: 'Ingrid Darling', cursive; /* Use Ingrid Darling font */
+        font-size: 90px; /* Increase font size to 90px */
+        position: absolute; /* Remove it from the normal document flow */
+        left: 50%; /* Position it in the center horizontally */
+        transform: translateX(-50%); /* Shift it left by 50% of its own width */
+        white-space: nowrap; /* Prevent wrapping of text */
+        margin-bottom: 10px; /* Reduce bottom margin */
+        }
+
+
+        .menu {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .menu h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .menu-item {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .menu-item img {
+            width: 100%;
+            height: auto;
+        }
+        .menu-item .details {
+            padding: 15px;
+        }
+        .menu-item .details h2 {
+            font-size: 1.5em;
+            margin: 0 0 10px 0;
+        }
+        .menu-item .details .price {
+            font-size: 1.2em;
+            text-decoration: line-through;
+            color: #999;
+        }
+        .menu-item .details .discounted-price {
+            font-size: 1.2em;
+            color: #e67e22;
+            margin-left: 10px;
+        }
+        .order-now {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .order-now button {
+            background-color: #e67e22;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .order-now button:hover {
+            background-color: #d35400;
+        }
+        .menu-title {
+            padding-top: 260px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="navbar-center w-100">
+            <div class="navbar-brand">
+                <img src="https://github.com/AlexCart1/ISD_Project24/raw/main/Logo_ISD.jpg" alt="Icon" width="160" height="150">
+            </div>
+            <div class="title">The Little Vegan Feast</div>
+        </div>
+        <div class="navbar-links">
+          <ul class="navbar-nav d-flex w-100 justify-content-between">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href=menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="main-content container">
+        <h1 class="text-center menu-title">Menu</h1>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="vegan-burger.jpg" alt="Vegan Burger">
+                    <div class="details">
+                        <h2>Vegan Burger</h2>
+                        <span class="price">$20.00</span>
+                        <span class="discounted-price">$18.00</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="veg-sausage.jpg" alt="Veg Sausage">
+                    <div class="details">
+                        <h2>Veg Sausage</h2>
+                        <span class="price">$20.00</span>
+                        <span class="discounted-price">$13.00</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="veg-samoussa.jpg" alt="Veg Samoussa">
+                    <div class="details">
+                        <h2>Veg Samoussa</h2>
+                        <span class="price">$20.00</span>
+                        <span class="discounted-price">$15.00</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="vegan-burger.jpg" alt="Vegan Burger">
+                    <div class="details">
+                        <h2>Vegan Burger</h2>
+                        <span class="price">$20.00</span>
+                        <span class="discounted-price">$18.00</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="veg-sausage.jpg" alt="Veg Sausage">
+                    <div class="details">
+                        <h2>Veg Sausage</h2>
+                        <span class="price">$20.00</span>
+                        <span class="discounted-price">$13.00</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="veg-samoussa.jpg" alt="Veg Samoussa">
+                    <div class="details">
+                        <h2>Veg Samoussa</h2>
+                        <span class="price">$20.00</span>
+                        <span class="discounted-price">$15.00</span>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+        <div class="order-now">
+            <button>Order Now</button>
+        </div>
+    </div>
+
+    
+  <!-- Footer -->
+  <footer class="text-white text-center text-lg-start bg-dark w-100">
+    <!-- Grid container -->
+    <div class="p-2"> <!-- Reduce padding -->
+      <!--Grid row-->
+      <div class="row mt-2"> <!-- Reduce top margin -->
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-3 footer-heading">CONTACT</h5> <!-- Reduce margin-bottom -->
+          <p style="margin-bottom: 1rem;"> <!-- Reduce margin-bottom -->
+            5 rue des poitiers, 75015 Paris<br>
+            <span style="color: #FFD700;">Call : </span> - +33 7 00 00 00 00 <br>
+            <span style="color: #FFD700;">benoit@mail.com</span>
+          </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-3 pb-1">Join our mailing list for updates,<br>Get news & offer events</h5> <!-- Reduce margin-bottom -->
+          <div class="form-outline form-white mb-2"> <!-- Reduce margin-bottom -->
+            <input type="text" id="formControlLg" class="form-control form-control-lg" />
+            <label class="form-label" for="formControlLg">Search</label>
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-3">WORKING HOURS</h5> <!-- Reduce margin-bottom -->
+          <table class="table text-center text-white">
+            <tbody class="fw-normal">
+              <tr>
+                <td>Mon - Fri:</td>
+                <td>07:00am - 06:00pm</td>
+              </tr>
+              <tr>
+                <td>Saturday:</td>
+                <td>07:00am - 01:00am</td>
+              </tr>
+              <tr>
+                <td>Sunday:</td>
+                <td>8:00am - 6:00pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);"> <!-- Reduce padding -->
+      ©Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">by Alexandre and Antoine | All Right Reserved</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+</body>
+</html>
