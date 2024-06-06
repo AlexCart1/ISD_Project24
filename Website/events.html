@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Little Vegan Feast - Events</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- FullCalendar CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inter:wght@400&family=Jacques+Francois&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .content {
+      flex: 1 0 auto;
+    }
+    .navbar {
+      background-color: #ffffff; /* Very white background color */
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+      position: fixed; /* Frame stays fixed during scroll */
+      top: 0;
+      width: 100%; /* Full width */
+      z-index: 1; /* Ensure it's above other content */
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center the content horizontally */
+    }
+    .navbar-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-bottom: -20px; /* Reduce bottom margin */
+    }
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+    }
+    .navbar-brand img {
+      margin-left: 20px; /* Add some space on the left of the icon */
+    }
+    .title {
+      font-family: 'Ingrid Darling', cursive; /* Use Ingrid Darling font */
+      font-size: 90px; /* Increase font size to 90px */
+      position: absolute; /* Remove it from the normal document flow */
+      left: 50%; /* Position it in the center horizontally */
+      transform: translateX(-50%); /* Shift it left by 50% of its own width */
+      white-space: nowrap; /* Prevent wrapping of text */
+      margin-bottom: 10px; /* Reduce bottom margin */
+    }
+    .navbar-links {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px; /* Max width for larger screens */
+      padding: 0 20px; /* Add padding to the left and right */
+      margin-top: -10px; /* Reduce top margin */
+    }
+    .navbar-nav .nav-link {
+      font-family: 'Inter', sans-serif; /* Use Inter font */
+      font-size: 30px; /* Set font size to 30px */
+      width: auto; /* Remove fixed width */
+    }
+    .navbar-nav .nav-link.active {
+      font-weight: bold; /* Make the active link bold */
+    }
+    .main-content {
+      margin-top: 250px; /* Adjust this value to create space below the navbar */
+      padding-left: 15px; /* Adjust this value for left padding */
+      padding-right: 15px; /* Adjust this value for right padding */
+    }
+    .main-paragraph {
+      margin-top: 20px; /* Adjust this value to create space above the paragraph */
+      font-family: 'Jacques Francois', serif; /* Use Jacques Francois font */
+      font-size: 24px; /* Set font size to 24px */
+      text-align: left; /* Align text to the left */
+    }
+    .event-title {
+      text-align: left;
+      font-family: 'Jacques Francois', serif;
+      font-size: 36px;
+      margin-top: 50px;
+    }
+    .event-paragraph {
+      font-family: 'Jacques Francois', serif;
+      font-size: 24px;
+      text-align: left;
+      margin-top: 20px;
+    }
+    .event-blocks {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40px;
+    }
+    .event-block {
+      text-align: center;
+      width: 45%;
+    }
+    .event-block img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #000; /* Add a border for better visibility */
+    }
+    .event-block h5 {
+      margin-top: 15px;
+      font-family: 'Jacques Francois', serif;
+      font-size: 20px;
+    }
+    #calendar {
+      max-width: 900px;
+      margin: 40px auto;
+    }
+    footer a {
+      color: white; /* White link color */
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .footer-icon {
+      color: white; /* White icon color */
+    }
+    .footer-heading {
+      margin-bottom: 10px; /* Reduce margin below the heading */
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar with Icon on the Left and Company Title Centered -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="navbar-center w-100">
+      <div class="navbar-brand">
+        <img src="https://github.com/AlexCart1/ISD_Project24/raw/main/Logo_ISD.jpg" alt="Icon" width="160" height="150">
+      </div>
+      <div class="title">The Little Vegan Feast</div>
+    </div>
+    <div class="navbar-links">
+      <ul class="navbar-nav d-flex w-100 justify-content-between">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="events.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main-content container">
+    <h1 class="text-center">Events</h1>
+    <p class="main-paragraph">Welcome to the events page of our vegan, gluten-free, and organic restaurant! Our internationally renowned chefs, who are also stakeholders, invite you to join a variety of engaging activities. Enjoy insightful lectures on healthy eating, where you’ll learn tips and tricks for maintaining a balanced diet. Additionally, participate in our weekly cooking workshops, where our chefs will guide you through the preparation of delicious, plant-based, and gluten-free dishes. Check our regularly updated calendar for specific dates and times. We look forward to sharing our passion for healthy and sustainable cuisine with you!</p>
+    
+    <!-- New Event Section -->
+    <h2 class="event-title">Our Upcoming Lectures</h2>
+    <p class="event-paragraph">No need to register for these free conferences!</p>
+    
+    <!-- Event Blocks -->
+    <div class="event-blocks">
+      <div class="event-block">
+        <img src="https://github.com/AlexCart1/ISD_Project24/raw/main/Conference1.jpg" alt="Lecture 1">
+        <h5>The importance of kitchen equipment<br>Overview of kitchen equipment used by a cook<br>21/06/2024<br>FOI 1 Room 1</h5>
+      </div>
+      <div class="event-block">
+        <img src="https://github.com/AlexCart1/ISD_Project24/raw/main/Conference2.jpg" alt="Lecture 2">
+        <h5>Gluten-free well-being<br>The benefits of gluten-free food in your kitchen<br>12/09/2024<br>FOI 1 Room 1</h5>
+      </div>
+    </div>
+
+    <!-- Cooking Workshop Section -->
+    <h2 class="event-title">Cooking Workshop</h2>
+    <p class="event-paragraph">Inscrit toi à des cours de cuisine ...</p>
+    <form>
+      <div class="form-group">
+        <label for="email">Email :</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <button type="submit" class="btn btn-primary">Valid</button>
+    </form>
+    <div id="calendar"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-white text-center text-lg-start bg-dark w-100">
+    <!-- Grid container -->
+    <div class="p-2"> <!-- Reduce padding -->
+      <!--Grid row-->
+      <div class="row mt-2"> <!-- Reduce top margin -->
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-3 footer-heading">CONTACT</h5> <!-- Reduce margin-bottom -->
+          <p style="margin-bottom: 1rem;"> <!-- Reduce margin-bottom -->
+            5 rue des poitiers, 75015 Paris<br>
+            <span style="color: #FFD700;">Call : </span> - +33 7 00 00 00 00 <br>
+            <span style="color: #FFD700;">benoit@mail.com</span>
+          </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-3 pb-1">Join our mailing list for updates,<br>Get news & offer events</h5> <!-- Reduce margin-bottom -->
+          <div class="form-outline form-white mb-2"> <!-- Reduce margin-bottom -->
+            <input type="text" id="formControlLg" class="form-control form-control-lg" />
+            <label class="form-label" for="formControlLg">Search</label>
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-3">WORKING HOURS</h5> <!-- Reduce margin-bottom -->
+          <table class="table text-center text-white">
+            <tbody class="fw-normal">
+              <tr>
+                <td>Mon - Fri:</td>
+                <td>07:00am - 06:00pm</td>
+              </tr>
+              <tr>
+                <td>Saturday:</td>
+                <td>07:00am - 01:00am</td>
+              </tr>
+              <tr>
+                <td>Sunday:</td>
+                <td>8:00am - 6:00pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);"> <!-- Reduce padding -->
+      ©Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">by Alexandre and Antoine | All Right Reserved</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Moment.js (required by FullCalendar) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <!-- FullCalendar JS -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+  <!-- Custom JS for this page -->
+  <script src="events.js"></script>
+</body>
+</html>

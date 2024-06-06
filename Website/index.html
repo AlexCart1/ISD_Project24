@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Little Vegan Feast</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inter:wght@400&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .content {
+      flex: 1 0 auto;
+    }
+    footer {
+      background-color: #343a40; /* Dark background color */
+      color: white; /* White text color */
+      flex-shrink: 0;
+      padding: 10px; /* Reduce padding */
+    }
+    .navbar {
+      background-color: #ffffff; /* Very white background color */
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+      position: fixed; /* Frame stays fixed during scroll */
+      top: 0;
+      width: 100%; /* Full width */
+      z-index: 1; /* Ensure it's above other content */
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center the content horizontally */
+    }
+    .navbar-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-bottom: -20px; /* Reduce bottom margin */
+    }
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+    }
+    .navbar-brand img {
+      margin-left: 20px; /* Add some space on the left of the icon */
+    }
+    .title {
+      font-family: 'Ingrid Darling', cursive; /* Use Ingrid Darling font */
+      font-size: 90px; /* Increase font size to 90px */
+      position: absolute; /* Remove it from the normal document flow */
+      left: 50%; /* Position it in the center horizontally */
+      transform: translateX(-50%); /* Shift it left by 50% of its own width */
+      white-space: nowrap; /* Prevent wrapping of text */
+      margin-bottom: 10px; /* Reduce bottom margin */
+    }
+    .navbar-links {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px; /* Max width for larger screens */
+      padding: 0 20px; /* Add padding to the left and right */
+      margin-top: -10px; /* Reduce top margin */
+    }
+    .navbar-nav .nav-link {
+      font-family: 'Inter', sans-serif; /* Use Inter font */
+      font-size: 30px; /* Set font size to 30px */
+      width: auto; /* Remove fixed width */
+    }
+    .homepage-picture {
+      width: 100%;
+      height: auto;
+      margin-top: 150px; /* Adjust margin to move the picture down */
+    }
+    .logo-slogan-picture {
+      display: block;
+      margin: 20px auto; /* Center the image */
+      width: 500px;
+      height: 350px;
+    }
+    .container {
+      color: black;
+      text-align: center;
+      margin-top: 20px; /* Add margin to separate from the navbar */
+    }
+    .three-columns {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+    .three-columns .column {
+      flex: 1;
+      padding: 0 70px; /* Add more padding between columns */
+      margin-bottom: 40px; /* Add space between the images and paragraphs */
+      text-align: center; /* Center the text and images within each column */
+    }
+    .three-columns img {
+      width: 160px; /* Fixed width */
+      height: 140px; /* Fixed height */
+      margin-bottom: 20px; /* Add space between images and text */
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px; /* Add space above the social icons section */
+      margin-bottom: 50px; /* Add space below the social icons section */
+    }
+    .social-icons img {
+      margin: 0 50px; /* Adjust spacing between icons */
+    }
+    .social-icons img:nth-child(2) {
+      margin: 0 150px; /* Add larger space to center Deliveroo icon */
+    }
+    footer a {
+      color: white; /* White link color */
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .footer-icon {
+      color: white; /* White icon color */
+    }
+    .footer-heading {
+      margin-bottom: 10px; /* Reduce margin below the heading */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar with Icon on the Left and Company Title Centered -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="navbar-center w-100">
+      <div class="navbar-brand">
+        <img src="https://github.com/AlexCart1/ISD_Project24/raw/main/Logo_ISD.jpg" alt="Icon" width="160" height="150">
+      </div>
+      <div class="title">The Little Vegan Feast</div>
+    </div>
+    <div class="navbar-links">
+      <ul class="navbar-nav d-flex w-100 justify-content-between">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Picture below Navbar -->
+    <img class="homepage-picture" src="https://github.com/AlexCart1/ISD_Project24/raw/main/HomepagePict1.png" alt="Homepage Picture">
+
+    <!-- Logo & Slogan Picture centered below main picture -->
+    <img class="logo-slogan-picture" src="https://github.com/AlexCart1/ISD_Project24/raw/main/Logo%26Slogan.jpg" alt="Logo and Slogan">
+
+    <!-- Content under the pictures -->
+    <div class="container">
+      <p>Welcome to The Little Vegan Feast, your destination for delicious vegan food and vibrant community events.</p>
+    </div>
+
+    <!-- Three Columns Section -->
+    <div class="container three-columns" style="margin:100px auto">
+      <div class="row">
+        <div class="col-sm-4 column">
+  
+          <div><img src="https://github.com/AlexCart1/ISD_Project24/raw/main/Rawfood.png" alt="Raw Food" /></div>
+          <h5>Pure Pleasure, completely raw</h5>
+        </div>
+        <div class="col-sm-4 column">
+          
+          <div><img src="https://github.com/AlexCart1/ISD_Project24/raw/main/Glutten%20Free.jpg" alt="Gluten Free" /></div>
+          <h5>Enjoy the freedom of gluten-free</h5>
+        </div>
+        <div class="col-sm-4 column">
+         
+          <div><img src="https://github.com/AlexCart1/ISD_Project24/raw/main/Healthy%20food.png" alt="Healthy Food" /></div>
+          <h5>Balance and wellness in every bite</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Icons Section -->
+    <div class="container text-center">
+      <h2>Join Us</h2>
+      <div class="social-icons">
+        <img src="https://github.com/AlexCart1/ISD_Project24/raw/main/LogoFacebook.png" alt="Facebook" width="186" height="161">
+        <img src="https://github.com/AlexCart1/ISD_Project24/raw/main/Logo_Deliveroo.png" alt="Deliveroo" width="153" height="122">
+        <img src="https://github.com/AlexCart1/ISD_Project24/raw/main/LogoInstagram.jpg" alt="Instagram" width="140" height="155">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-white text-center text-lg-start bg-dark w-100">
+    <!-- Grid container -->
+    <div class="p-2"> <!-- Reduce padding -->
+      <!--Grid row-->
+      <div class="row mt-2"> <!-- Reduce top margin -->
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-3 footer-heading">CONTACT</h5> <!-- Reduce margin-bottom -->
+          <p style="margin-bottom: 1rem;"> <!-- Reduce margin-bottom -->
+            5 rue des poitiers, 75015 Paris<br>
+            <span style="color: #FFD700;">Call : </span> - +33 7 00 00 00 00 <br>
+            <span style="color: #FFD700;">benoit@mail.com</span>
+          </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-3 pb-1">Join our mailing list for updates,<br>Get news & offer events</h5> <!-- Reduce margin-bottom -->
+          <div class="form-outline form-white mb-2"> <!-- Reduce margin-bottom -->
+            <input type="text" id="formControlLg" class="form-control form-control-lg" />
+            <label class="form-label" for="formControlLg">Search</label>
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-3">WORKING HOURS</h5> <!-- Reduce margin-bottom -->
+          <table class="table text-center text-white">
+            <tbody class="fw-normal">
+              <tr>
+                <td>Mon - Fri:</td>
+                <td>07:00am - 06:00pm</td>
+              </tr>
+              <tr>
+                <td>Saturday:</td>
+                <td>07:00am - 01:00am</td>
+              </tr>
+              <tr>
+                <td>Sunday:</td>
+                <td>8:00am - 6:00pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);"> <!-- Reduce padding -->
+      ©Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">by Alexandre and Antoine | All Right Reserved</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
