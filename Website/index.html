@@ -10,20 +10,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inter:wght@400&display=swap" rel="stylesheet">
   <style>
     body, html {
-      height: 100%;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-    }
-    .content {
-      flex: 1 0 auto;
-    }
-    footer {
-      background-color: #343a40; /* Dark background color */
-      color: white; /* White text color */
-      flex-shrink: 0;
-      padding: 10px; /* Reduce padding */
-    }
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    flex: 1 0 auto;
+  }
     .navbar {
       background-color: #ffffff; /* Very white background color */
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
@@ -35,29 +29,18 @@
       flex-direction: column;
       align-items: center; /* Center the content horizontally */
     }
-    .navbar-center {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      margin-bottom: -20px; /* Reduce bottom margin */
-    }
-    .navbar-brand {
+    .navbar-header {
       display: flex;
       align-items: center;
-      margin-right: auto;
+      justify-content: center; /* Center the content */
     }
-    .navbar-brand img {
-      margin-left: 20px; /* Add some space on the left of the icon */
+    .navbar-header img {
+      margin-right: 20px; /* Add some space between the icon and title */
     }
     .title {
       font-family: 'Ingrid Darling', cursive; /* Use Ingrid Darling font */
       font-size: 90px; /* Increase font size to 90px */
-      position: absolute; /* Remove it from the normal document flow */
-      left: 50%; /* Position it in the center horizontally */
-      transform: translateX(-50%); /* Shift it left by 50% of its own width */
       white-space: nowrap; /* Prevent wrapping of text */
-      margin-bottom: 10px; /* Reduce bottom margin */
     }
     .navbar-links {
       display: flex;
@@ -65,7 +48,7 @@
       width: 100%;
       max-width: 1200px; /* Max width for larger screens */
       padding: 0 20px; /* Add padding to the left and right */
-      margin-top: -10px; /* Reduce top margin */
+      margin-top: -20px; /* Adjust top margin */
     }
     .navbar-nav .nav-link {
       font-family: 'Inter', sans-serif; /* Use Inter font */
@@ -73,9 +56,11 @@
       width: auto; /* Remove fixed width */
     }
     .homepage-picture {
+      
       width: 100%;
       height: auto;
-      margin-top: 150px; /* Adjust margin to move the picture down */
+      max-height: 700px; /* Set the maximum height */
+      overflow: hidden; /* Hide overflow */
     }
     .logo-slogan-picture {
       display: block;
@@ -117,6 +102,14 @@
     .social-icons img:nth-child(2) {
       margin: 0 150px; /* Add larger space to center Deliveroo icon */
     }
+
+    footer {
+      background-color: #343a40; /* Dark background color */
+      color: white; /* White text color */
+      flex-shrink: 0;
+      padding: 10px; /* Reduce padding */
+    }
+
     footer a {
       color: white; /* White link color */
     }
@@ -129,34 +122,29 @@
     .footer-heading {
       margin-bottom: 10px; /* Reduce margin below the heading */
     }
+    .working-hours {
+      max-width: 300px; /* Reduce the width of this column */
+      margin: 0 auto; /* Center the column */
+    }
   </style>
 </head>
 <body>
-    
-
-    <!---->
-
-
-
-
   <!-- Navbar with Icon on the Left and Company Title Centered -->
   <nav class="navbar navbar-expand-md navbar-light">
-    <div class="navbar-center w-100">
-      <div class="navbar-brand">
-        <img src="https://github.com/AlexCart1/ISD_Project24/raw/main/Logo_ISD.jpg" alt="Icon" width="160" height="150">
-      </div>
+    <div class="navbar-header">
+      <img src="https://github.com/AlexCart1/ISD_Project24/raw/main/Logo_ISD.jpg" alt="Icon" width="160" height="150">
       <div class="title">The Little Vegan Feast</div>
     </div>
     <div class="navbar-links">
       <ul class="navbar-nav d-flex w-100 justify-content-between">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link active font-weight-bold" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Menu</a>
+          <a class="nav-link" href="menu.html">Menu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Events</a>
+          <a class="nav-link" href="events.html">Events</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="aboutus.html">About Us</a>
@@ -218,7 +206,7 @@
       <div class="row mt-2"> <!-- Reduce top margin -->
         <!--Grid column-->
         <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-3 footer-heading">CONTACT</h5> <!-- Reduce margin-bottom -->
+          <h5 class="text-uppercase mb-3 footer-heading"><br><br>CONTACT</h5> <!-- Reduce margin-bottom -->
           <p style="margin-bottom: 1rem;"> <!-- Reduce margin-bottom -->
             5 rue des poitiers, 75015 Paris<br>
             <span style="color: #FFD700;">Call : </span> - +33 7 00 00 00 00 <br>
@@ -229,16 +217,16 @@
 
         <!--Grid column-->
         <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-3 pb-1">Join our mailing list for updates,<br>Get news & offer events</h5> <!-- Reduce margin-bottom -->
+          <h5 class="text-uppercase mb-3 pb-1"><br>Join our mailing list for updates,<br>Get news & offer events</h5> <!-- Reduce margin-bottom -->
           <div class="form-outline form-white mb-2"> <!-- Reduce margin-bottom -->
             <input type="text" id="formControlLg" class="form-control form-control-lg" />
-            <label class="form-label" for="formControlLg">Search</label>
+            <label class="form-label" for="formControlLg"><a href="#" style="color: inherit; text-decoration: none;"><br>SUBSCRIBE</a></label>
           </div>
         </div>
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0 working-hours"> <!-- Add class to target this column -->
           <h5 class="text-uppercase mb-3">WORKING HOURS</h5> <!-- Reduce margin-bottom -->
           <table class="table text-center text-white">
             <tbody class="fw-normal">

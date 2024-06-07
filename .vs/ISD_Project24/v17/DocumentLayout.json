@@ -14,8 +14,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -28,7 +32,7 @@
               "RelativeDocumentMoniker": "Website\\index.html",
               "ToolTip": "C:\\Users\\acart\\source\\repos\\AlexCart1\\ISD_Project24\\Website\\index.html",
               "RelativeToolTip": "Website\\index.html",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFoAAAAUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-06-06T11:18:27.746Z",
               "EditorCaption": ""
