@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Little Vegan Feast</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Cormorant Infant' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Cormorant Infant', serif;
+        }
+        .navbar {
+        background-color: #ffffff; /* Very white background color */
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+        position: fixed; /* Frame stays fixed during scroll */
+        top: 0;
+        width: 100%; /* Full width */
+        z-index: 1; /* Ensure it's above other content */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the content horizontally */
+        }
+        .navbar-header {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center the content */
+        }
+        .navbar-header img {
+        margin-right: 20px; /* Add some space between the icon and title */
+        }
+        .title {
+        font-family: 'Ingrid Darling', cursive; /* Use Ingrid Darling font */
+        font-size: 90px; /* Increase font size to 90px */
+        white-space: nowrap; /* Prevent wrapping of text */
+        }
+        .navbar-links {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px; /* Max width for larger screens */
+        padding: 0 20px; /* Add padding to the left and right */
+        margin-top: -20px; /* Adjust top margin */
+        }
+        .navbar-nav .nav-link {
+        font-family: 'Inter', sans-serif; /* Use Inter font */
+        font-size: 30px; /* Set font size to 30px */
+        width: auto; /* Remove fixed width */
+        }
+
+        .ingredient {
+            width: 120px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .list-unstyled {
+            font-family: 'Cormorant Infant';
+
+        }
+        
+        .nutrition-info {
+            font-weight: bold;        
+        }
+        .ingredient p {
+            font-family: 'Cormorant Infant'
+        }
+
+        .ingredient img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .info {
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+
+        footer .social-icons a {
+            font-size: 20px;
+        }
+        
+        .ingredients-title {
+            padding-top: 260px;
+            font-weight: bold;
+        }
+
+        .main-container {
+            padding-top: 260px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="navbar-header">
+            <img src="https://github.com/AlexCart1/ISD_Project24/raw/main/Logo_ISD.jpg" alt="Icon" width="160" height="150">
+            <div class="title">The Little Vegan Feast</div>
+        </div>
+    <div class="navbar-links">
+      <ul class="navbar-nav d-flex w-100 justify-content-between">
+        <li class="nav-item">
+          <a class="nav-link active font-weight-bold" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <main class="container mt-5 main-container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 style=" font-family: 'Cormorant Infant'; font-weight: bold">Ingredients</h2>
+                <div class="d-flex flex-wrap">
+                    <div class="ingredient">
+                        <img src="avocado.jpg" alt="Avocado">
+                        <p>Avocado<br>200g</p>
+                    </div>
+                    <div class="ingredient">
+                        <img src="potato.jpg" alt="Potato">
+                        <p>Potato<br>150g</p>
+                    </div>
+                    <div class="ingredient">
+                        <img src="salad_leaves.png" alt="Salad Leaves">
+                        <p>Salad Leaves<br>50g</p>
+                    </div>
+                    <div class="ingredient">
+                        <img src="tomato.jpg" alt="Tomato">
+                        <p>Tomato<br>50g</p>
+                    </div>
+                    <div class="ingredient">
+                        <img src="onion.jpg" alt="Onion">
+                        <p>Onion<br>500g</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="dish_image.jpg" alt="Dish Image" class="img-fluid">
+                <div class="info mt-3">
+                    <p><strong>Cooking time:</strong> 45 min</p>
+                    <p><strong>Difficulty:</strong> Medium</p>
+                    <p><strong>Servings:</strong> 5/5</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2 class="nutrition-info">Nutrition Info</h2>
+                <ul class="list-unstyled">
+                    <li>Calories: 230</li>
+                    <li>Saturated Fat: 0.9g</li>
+                    <li>Polyunsaturated Fat: 1.1g</li>
+                    <li>Cholesterol: 136.9 mg</li>
+                    <li>Sodium: 630.6 mg</li>
+                    <li>Protein: 54.7 g</li>
+                    <li>Potassium: 0.2 g</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white mt-5 p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact</h5>
+                    <p>5 Rue des Poitiers, 75015 Paris<br>
+                    Call: +33 7 00 00 00 00<br>
+                    Email: benoit@mail.com</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Join our mailing list for updates</h5>
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="mt-3">
+                        <h5>Working hours</h5>
+                        <p>Mon - Fri: 7.00am - 6.00pm<br>
+                        Sat: 7.00am - 6.00pm<br>
+                        Sun: 8.00am - 6.00pm</p>
+                        <div class="social-icons">
+                            <a href="#" class="text-white mr-2"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-white mr-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white mr-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white mr-2"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
