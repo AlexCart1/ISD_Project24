@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Little Vegan Feast</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inter:wght@400&family=Jacques+Francois&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Cursive', sans-serif;
+        }
+
+        .navbar {
+        background-color: #ffffff; /* Very white background color */
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+        position: fixed; /* Frame stays fixed during scroll */
+        top: 0;
+        width: 100%; /* Full width */
+        z-index: 1; /* Ensure it's above other content */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the content horizontally */
+        }
+        .navbar-header {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center the content */
+        }
+        .navbar-header img {
+        margin-right: 20px; /* Add some space between the icon and title */
+        }
+        .title {
+        font-family: 'Ingrid Darling', cursive; /* Use Ingrid Darling font */
+        font-size: 90px; /* Increase font size to 90px */
+        white-space: nowrap; /* Prevent wrapping of text */
+        }
+        .navbar-links {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px; /* Max width for larger screens */
+        padding: 0 20px; /* Add padding to the left and right */
+        margin-top: -20px; /* Adjust top margin */
+        }
+        .navbar-nav .nav-link {
+        font-family: 'Inter', sans-serif; /* Use Inter font */
+        font-size: 30px; /* Set font size to 30px */
+        width: auto; /* Remove fixed width */
+        }
+
+        .product-title {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .product-price {
+            font-size: 1.5rem;
+            color: #666;
+        }
+        .product-description {
+            margin-top: 20px;
+        }
+        .contact-info {
+            margin-top: 40px;
+        }
+        .working-hours {
+          max-width: 300px; /* Reduce the width of this column */
+          margin: 0 auto; /* Center the column */
+        }
+        .footer {
+            margin-top: 40px;
+            padding: 20px 0;
+            background: #f8f9fa;
+        }
+        .footer a {
+            color: #333;
+            margin-right: 10px;
+        }
+        .footer a:hover {
+            text-decoration: none;
+        }
+
+        .btn-color-orange {
+            background-color: orange;
+            border-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="navbar-header">
+          <img src="https://github.com/AlexCart1/ISD_Project24/raw/main/Logo_ISD.jpg" alt="Icon" width="160" height="150">
+          <div class="title">The Little Vegan Feast</div>
+        </div>
+        <div class="navbar-links">
+          <ul class="navbar-nav d-flex w-100 justify-content-between">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li>
+              <a href="kart.html">
+                <img class="shooping_cart" src="shopping_cart.png" alt="shopping_cart" width="40" height="50">
+              </a>  
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container mt-5">
+        <div class="row" style="margin-top: 250px">
+            <div class="col-md-6">
+                <img src="vegan-burger.jpg" class="img-fluid" alt="Vegan Burger">
+            </div>
+            <div class="col-md-6">
+                <h2 class="product-title">Vegan Burger</h2>
+                <p class="product-price">$18.00</p>
+                <form class="form-inline">
+                    <div class="form-group mb-2">
+                        <label for="quantity" class="sr-only">Quantity</label>
+                        <input type="number" class="form-control" id="quantity" value="1" min="1">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-color-orange mb-2 ml-2">Add to cart</button>
+                </form>
+                <p><b>Category:</b> Food</p>
+                <p><b>Tags:</b> Recipes, Sweet, Tasty</p>
+                <p><b>Share: </b>
+                    <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                    <a href="https://x.com" class="fa fa-twitter"></a>
+                    <a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
+                </p>
+                <div class="product-description">
+                    <p><b>Description: </b>Discover our Vegan Gourmet Burger, a true symphony of flavors and textures, carefully concocted to delight your taste buds. At The little garden, we are proud to offer you a 100% vegan burger, combining taste pleasure and respect for the planet. Our homemade plant-based patty, the heart of this burger, is prepared with chickpeas, black beans and quinoa. Seasoned with a subtle blend of spices, it offers a texture that is both crunchy on the outside and tender on the inside. Each bite reveals a richness of flavors, perfectly balanced. Soft, light and lightly toasted for an authentic taste, our vegan brioche bread is made without animal products. It harmoniously envelops our vegetable pancake, bringing a touch of sweetness to each bite.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-white text-center text-lg-start bg-dark w-100">
+        <!-- Grid container -->
+        <div class="p-2"> <!-- Reduce padding -->
+          <!--Grid row-->
+          <div class="row mt-2"> <!-- Reduce top margin -->
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-3 footer-heading"><br><br>CONTACT</h5> <!-- Reduce margin-bottom -->
+              <p style="margin-bottom: 1rem;"> <!-- Reduce margin-bottom -->
+                5 rue des poitiers, 75015 Paris<br>
+                <span style="color: #FFD700;">Call : </span> - +33 7 00 00 00 00 <br>
+                <span style="color: #FFD700;">benoit@mail.com</span>
+              </p>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-3 pb-1"><br>Join our mailing list for updates,<br>Get news & offer events</h5> <!-- Reduce margin-bottom -->
+              <div class="form-outline form-white mb-2"> <!-- Reduce margin-bottom -->
+                <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                <label class="form-label" for="formControlLg"><a href="#" style="color: inherit; text-decoration: none;"><br>SUBSCRIBE</a></label>
+              </div>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0 working-hours"> <!-- Add class to target this column -->
+              <h5 class="text-uppercase mb-3">WORKING HOURS</h5> <!-- Reduce margin-bottom -->
+              <table class="table text-center text-white">
+                <tbody class="fw-normal">
+                  <tr>
+                    <td>Mon - Fri:</td>
+                    <td>07:00am - 06:00pm</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday:</td>
+                    <td>07:00am - 01:00am</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday:</td>
+                    <td>8:00am - 6:00pm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);"> <!-- Reduce padding -->
+          ©Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">by Alexandre and Antoine | All Right Reserved</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
