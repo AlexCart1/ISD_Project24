@@ -86,3 +86,8 @@ footer .social-icons a {
 border: 2px solid orange;
 border-radius: 20%;
 }
+
+.working-hours {
+    max-width: 300px; /* Reduce the width of this column */
+    margin: 0 auto; /* Center the column */
+}

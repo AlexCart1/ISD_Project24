@@ -10,6 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inter:wght@400&family=Jacques+Francois&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="../css/aboutus.css">
+  <link rel="stylesheet" href="../css/shared.css">
+
+  <script>
+    function showAlert() {
+        alert("This feature is not implemented yet");
+    }
+  </script>
 
 </head>
 <body>
@@ -108,9 +115,9 @@
             <!--Grid column-->
             <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
               <h5 class="text-uppercase mb-3 pb-1"><br>Join our mailing list for updates,<br>Get news & offer events</h5> <!-- Reduce margin-bottom -->
-              <div class="form-outline form-white mb-2"> <!-- Reduce margin-bottom -->
-                <input type="text" id="formControlLg" class="form-control form-control-lg" />
-                <label class="form-label" for="formControlLg"><a href="#" style="color: inherit; text-decoration: none;"><br>SUBSCRIBE</a></label>
+              <div class="form-outline form-white mb-2 newsletter-subscription "> <!-- Reduce margin-bottom -->
+                <input type="text" id="formControlLg" class="form-control form-control-lg" placeholder="e-mail" />
+                <button type="submit" class="form-label" for="formControlLg" style="color: darkblue; text-decoration: none;" onclick="showAlert()">SUBSCRIBE</button>
               </div>
             </div>
             <!--Grid column-->

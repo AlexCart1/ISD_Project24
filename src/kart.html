@@ -8,6 +8,14 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/kart.css">
+    <link rel="stylesheet" href="../css/shared.css">
+
+    
+    <script>
+      function showAlert() {
+          alert("This feature is not implemented yet");
+      }
+    </script>
 
 </head>
 <body>
@@ -40,7 +48,6 @@
       </nav>
 
 
-
       <div class="container cart-table">
         <table class="table table-bordered">
             <thead>
@@ -55,12 +62,12 @@
 
             <tbody>
                 <tr>
-                    <td><a href="#"><img class="center remove-item" src="../assets/milker_X_icon.png" alt="Remove" height="18px" width="18px"></a></td>
+                    <td><a onclick="showAlert()" href="#"><img class="center remove-item" src="../assets/milker_X_icon.png" alt="Remove" height="18px" width="18px"></a></td>
                     <td><img src="../assets/vegan-burger.jpg" alt="Vegan Burger" height="100px" width="100px"> Burger vegan</td>
                     <td>
-                        <button class="btn btn-sm btn-secondary">-</button>
+                        <button class="btn btn-sm btn-secondary" onclick="showAlert()">-</button>
                         <input type="number" value="1" min="1" class="form-control d-inline-block" style="width: 50px;">
-                        <button class="btn btn-sm btn-secondary">+</button>
+                        <button class="btn btn-sm btn-secondary" onclick="showAlert()">+</button>
                     </td>
                     <td>18.00€</td>
                     <td>18.00€</td>
@@ -75,14 +82,14 @@
                 <h5>Discounts</h5>
                 <form class="form-inline">
                     <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Enter your coupon code...">
-                    <button type="submit" class="btn btn-dark mb-2">Apply Coupon</button>
+                    <button type="submit" class="btn btn-dark mb-2" onclick="showAlert()">Apply Coupon</button>
                 </form>
             </div>
             <div class="col-md-6 text-right">
                 <h5>Total</h5>
                 <p>Total amount: 18.00€</p>
                 <p>Discount: 00.00€</p>
-                <button class="btn btn-success">Payment</button>
+                <button class="btn btn-success" onclick="showAlert()">Payment</button>
             </div>
         </div>
     </div>
@@ -109,9 +116,9 @@
             <!--Grid column-->
             <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
               <h5 class="text-uppercase mb-3 pb-1"><br>Join our mailing list for updates,<br>Get news & offer events</h5> <!-- Reduce margin-bottom -->
-              <div class="form-outline form-white mb-2"> <!-- Reduce margin-bottom -->
-                <input type="text" id="formControlLg" class="form-control form-control-lg" />
-                <label class="form-label" for="formControlLg"><a href="#" style="color: inherit; text-decoration: none;"><br>SUBSCRIBE</a></label>
+              <div class="form-outline form-white mb-2 newsletter-subscription"> <!-- Reduce margin-bottom -->
+                <input type="text" id="formControlLg" class="form-control form-control-lg" placeholder="e-mail" />
+                <button type="submit" class="form-label" for="formControlLg" style="color: darkblue; text-decoration: none;" onclick="showAlert()">SUBSCRIBE</button>
               </div>
             </div>
             <!--Grid column-->
