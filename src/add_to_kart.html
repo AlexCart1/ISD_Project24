@@ -7,90 +7,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inter:wght@400&family=Jacques+Francois&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body {
-            font-family: 'Cursive', sans-serif;
-        }
 
-        .navbar {
-        background-color: #ffffff; /* Very white background color */
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-        position: fixed; /* Frame stays fixed during scroll */
-        top: 0;
-        width: 100%; /* Full width */
-        z-index: 1; /* Ensure it's above other content */
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Center the content horizontally */
-        }
-        .navbar-header {
-        display: flex;
-        align-items: center;
-        justify-content: center; /* Center the content */
-        }
-        .navbar-header img {
-        margin-right: 20px; /* Add some space between the icon and title */
-        }
-        .title {
-        font-family: 'Ingrid Darling', cursive; /* Use Ingrid Darling font */
-        font-size: 90px; /* Increase font size to 90px */
-        white-space: nowrap; /* Prevent wrapping of text */
-        }
-        .navbar-links {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 1200px; /* Max width for larger screens */
-        padding: 0 20px; /* Add padding to the left and right */
-        margin-top: -20px; /* Adjust top margin */
-        }
-        .navbar-nav .nav-link {
-        font-family: 'Inter', sans-serif; /* Use Inter font */
-        font-size: 30px; /* Set font size to 30px */
-        width: auto; /* Remove fixed width */
-        }
+    <link rel="stylesheet" href="../css/add_to_kart.css">
 
-        .product-title {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-        .product-price {
-            font-size: 1.5rem;
-            color: #666;
-        }
-        .product-description {
-            margin-top: 20px;
-        }
-        .contact-info {
-            margin-top: 40px;
-        }
-        .working-hours {
-          max-width: 300px; /* Reduce the width of this column */
-          margin: 0 auto; /* Center the column */
-        }
-        .footer {
-            margin-top: 40px;
-            padding: 20px 0;
-            background: #f8f9fa;
-        }
-        .footer a {
-            color: #333;
-            margin-right: 10px;
-        }
-        .footer a:hover {
-            text-decoration: none;
-        }
-
-        .btn-color-orange {
-            background-color: orange;
-            border-color: orange;
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light">
         <div class="navbar-header">
-          <img src="https://github.com/AlexCart1/ISD_Project24/raw/main/Logo_ISD.jpg" alt="Icon" width="160" height="150">
+          <img src="../assets/Logo_ISD.jpg" alt="Icon" width="160" height="150">
           <div class="title">The Little Vegan Feast</div>
         </div>
         <div class="navbar-links">
@@ -109,7 +33,7 @@
             </li>
             <li>
               <a href="kart.html">
-                <img class="shooping_cart" src="shopping_cart.png" alt="shopping_cart" width="40" height="50">
+                <img class="shooping_cart" src="../assets/shopping_cart.png" alt="shopping_cart" width="40" height="50">
               </a>  
             </li>
           </ul>
@@ -119,7 +43,7 @@
     <div class="container mt-5">
         <div class="row" style="margin-top: 250px">
             <div class="col-md-6">
-                <img src="vegan-burger.jpg" class="img-fluid" alt="Vegan Burger">
+                <img src="../assets/vegan-burger.jpg" class="img-fluid" alt="Vegan Burger">
             </div>
             <div class="col-md-6">
                 <h2 class="product-title">Vegan Burger</h2>

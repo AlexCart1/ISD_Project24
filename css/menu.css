@@ -1,0 +1,164 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+.content {
+flex: 1 0 auto;
+}
+.navbar {
+background-color: #ffffff; /* Very white background color */
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+position: fixed; /* Frame stays fixed during scroll */
+top: 0;
+width: 100%; /* Full width */
+z-index: 1; /* Ensure it's above other content */
+display: flex;
+flex-direction: column;
+align-items: center; /* Center the content horizontally */
+}
+.navbar-header {
+display: flex;
+align-items: center;
+justify-content: center; /* Center the content */
+}
+.navbar-header img {
+margin-right: 20px; /* Add some space between the icon and title */
+}
+.title {
+font-family: 'Ingrid Darling', cursive; /* Use Ingrid Darling font */
+font-size: 90px; /* Increase font size to 90px */
+white-space: nowrap; /* Prevent wrapping of text */
+}
+.navbar-links {
+display: flex;
+justify-content: space-between;
+width: 100%;
+max-width: 1200px; /* Max width for larger screens */
+padding: 0 20px; /* Add padding to the left and right */
+margin-top: -20px; /* Adjust top margin */
+}
+.navbar-nav .nav-link {
+font-family: 'Inter', sans-serif; /* Use Inter font */
+font-size: 30px; /* Set font size to 30px */
+width: auto; /* Remove fixed width */
+}
+
+.menu {
+    text-align: center;
+    margin-top: 50px;
+}
+.menu h1 {
+    font-size: 2em;
+}
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.menu-item {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.menu-item img {
+    width: 100%;
+    height: auto;
+}
+.menu-item .details {
+    padding: 15px;
+}
+.menu-item .details h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+}
+.menu-item .details .price {
+    font-size: 1.2em;
+    text-decoration: line-through;
+    color: #999;
+}
+.menu-item .details .discounted-price {
+    font-size: 1.2em;
+    color: #e67e22;
+    margin-left: 10px;
+}
+.order-now {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.order-now button {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.order-now button:hover {
+    background-color: #d35400;
+}
+.menu-title {
+    padding-top: 1300px;
+    font-weight: bold;
+}
+
+footer {
+background-color: #343a40; /* Dark background color */
+color: white; /* White text color */
+flex-shrink: 0;
+padding: 10px; /* Reduce padding */
+}
+
+footer a {
+    color: white; /* White link color */
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.footer-icon {
+    color: white; /* White icon color */
+}
+.footer-heading {
+    margin-bottom: 10px; /* Reduce margin below the heading */
+}
+.working-hours {
+    max-width: 300px; /* Reduce the width of this column */
+    margin: 0 auto; /* Center the column */
+}
+
+.shooping_cart {
+    border: 2px solid orange;
+    border-radius: 20%;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+.add_shopping_cart {
+    margin-left: 10px;
+}
+
+.more_information {
+    margin-left: 10px;
+    text-decoration: underline;
+}
