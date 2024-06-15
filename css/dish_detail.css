@@ -1,43 +1,6 @@
 body {
     font-family: 'Cormorant Infant', serif;
 }
-.navbar {
-background-color: #ffffff; /* Very white background color */
-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-position: fixed; /* Frame stays fixed during scroll */
-top: 0;
-width: 100%; /* Full width */
-z-index: 1; /* Ensure it's above other content */
-display: flex;
-flex-direction: column;
-align-items: center; /* Center the content horizontally */
-}
-.navbar-header {
-display: flex;
-align-items: center;
-justify-content: center; /* Center the content */
-}
-.navbar-header img {
-margin-right: 20px; /* Add some space between the icon and title */
-}
-.title {
-font-family: 'Ingrid Darling', cursive; /* Use Ingrid Darling font */
-font-size: 90px; /* Increase font size to 90px */
-white-space: nowrap; /* Prevent wrapping of text */
-}
-.navbar-links {
-display: flex;
-justify-content: space-between;
-width: 100%;
-max-width: 1200px; /* Max width for larger screens */
-padding: 0 20px; /* Add padding to the left and right */
-margin-top: -20px; /* Adjust top margin */
-}
-.navbar-nav .nav-link {
-font-family: 'Inter', sans-serif; /* Use Inter font */
-font-size: 30px; /* Set font size to 30px */
-width: auto; /* Remove fixed width */
-}
 
 .ingredient {
     width: 120px;
@@ -69,25 +32,24 @@ width: auto; /* Remove fixed width */
     margin-top: 10px;
 }
 
-footer .social-icons a {
-    font-size: 20px;
-}
-
 .ingredients-title {
     padding-top: 260px;
     font-weight: bold;
+    margin-bottom: 3000px;
 }
 
 .main-container {
-    padding-top: 260px;
+    padding-top: 180px;
 }
 
-.shooping_cart {
-border: 2px solid orange;
-border-radius: 20%;
+.return-button {
+    font-family: 'Cormorant Infant';
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
 }
 
-.working-hours {
-    max-width: 300px; /* Reduce the width of this column */
-    margin: 0 auto; /* Center the column */
+.dish-detail-main-content {
+    padding-top: 300px;
 }

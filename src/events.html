@@ -6,6 +6,7 @@
   <title>The Little Vegan Feast - Events</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
   <!-- FullCalendar CSS -->
   <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css" rel="stylesheet">
   <!-- Google Fonts -->
@@ -63,6 +64,7 @@
     <!-- Event Blocks -->
     <div class="event-blocks">
       <div class="event-block">
+        
         <img src="../assets/Conference1.jpg" alt="Lecture 1">
         <h5>The importance of kitchen equipment<br>Overview of kitchen equipment used by a cook<br>21/06/2024<br>FOI 1 Room 1</h5>
       </div>
@@ -80,7 +82,7 @@
         <label for="email">Email :</label>
         <input type="email" class="form-control" id="email" placeholder="Enter your email">
       </div>
-      <button type="submit" class="btn btn-primary">Valid</button>
+      <button type="submit" class="btn btn-primary" onclick="showAlert()">Valid</button>
     </form>
     <div id="calendar"></div>
   </div>
@@ -145,6 +147,11 @@
         </div>
         <!-- Copyright -->
       </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+      <!-- FullCalendar JS -->
+      <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+
+      <script src="../js/events.js"></script>
 
 
 </body>

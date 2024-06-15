@@ -1,3 +1,81 @@
+
+
+/* NAVBAR CSS */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-header img {
+    margin-right: 20px;
+}
+.title {
+    font-family: 'Ingrid Darling', cursive;
+    font-size: 90px;
+    white-space: nowrap;
+}
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin-top: -20px;
+}
+.navbar-nav .nav-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    width: auto;
+}
+
+
+
+/* FOOTER */
+
+
+footer {
+    background-color: #343a40; /* Dark background color */
+    color: white; /* White text color */
+    flex-shrink: 0;
+    padding: 10px; /* Reduce padding */
+}
+
+footer a {
+    color: white; /* White link color */
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.footer-icon {
+    color: white; /* White icon color */
+}
+.footer-heading {
+    margin-bottom: 10px; /* Reduce margin below the heading */
+}
+.working-hours {
+    max-width: 300px; /* Reduce the width of this column */
+    margin: 0 auto; /* Center the column */
+}
+
+.shooping_cart {
+    border: 2px solid orange;
+    border-radius: 20%;
+}
+
+
+
+
 .newsletter-subscription {
     text-align: center;
     margin-top: 20px;
