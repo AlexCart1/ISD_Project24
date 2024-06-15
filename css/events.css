@@ -40,6 +40,10 @@ body, html {
     text-align: center;
     width: 45%;
 }
+.event-block:hover {
+    transform: scale(1.05);
+}
+
 .event-block img {
     width: 100%;
     height: auto;

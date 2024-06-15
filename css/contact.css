@@ -1,5 +1,4 @@
 
-
 /* NAVBAR CSS */
 .navbar {
     background-color: #ffffff;
@@ -73,9 +72,6 @@ footer a:hover {
     border-radius: 20%;
 }
 
-
-
-
 .newsletter-subscription {
     text-align: center;
     margin-top: 20px;
@@ -96,8 +92,83 @@ footer a:hover {
 
 
 
+.contact-title {
+    margin-top: 200px;
+}
+
+
+.header {
+    text-align: center;
+    margin-top: 200px;
+}
+.header h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+.header p {
+    font-size: 16px;
+    color: #555;
+}
+.contact-info {
+    border-right: 1px solid #ddd;
+    padding-right: 2rem;
+    margin-right: 2rem;
+}
+.contact-info h4 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.contact-info p {
+    margin-bottom: 10px;
+}
+.contact-info .social-icons a {
+    font-size: 20px;
+    margin-right: 15px;
+    color: #333;
+    text-decoration: none;
+}
+.contact-form {
+    margin-top: 1rem;
+}
+.contact-form .form-check {
+    margin-bottom: 1rem;
+}
+.contact-form .form-check-label {
+    margin-left: 5px;
+}
+.contact-form button {
+    margin-top: 10px;
+}
+.form-control {
+    margin-bottom: 10px;
+}
 
 
 
 
 
+
+.contact-blocks {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.contact-block {
+    text-align: center;
+    width: 45%;
+}
+.contact-block img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #000; /* Add a border for better visibility */
+}
+.contact-block h5 {
+    margin-top: 15px;
+    font-family: 'Jacques Francois', serif;
+    font-size: 20px;
+}
+
+
+.send-messag-button {
+    padding-bottom: 20px;
+}
