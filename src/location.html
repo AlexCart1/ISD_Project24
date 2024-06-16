@@ -6,22 +6,22 @@
   <title>The Little Vegan Feast</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/shared.css">
-  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="stylesheet" href="../css/location.css">
 
   <script>
     function showAlert() {
         alert("This feature is not implemented yet");
     }
   </script>
-
 </head>
+
+
 
 <body>
   <!-- Navbar with Icon on the Left and Company Title Centered -->
@@ -33,7 +33,7 @@
     <div class="navbar-links">
       <ul class="navbar-nav d-flex w-100 justify-content-between">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link active font-weight-bold" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="menu.html">Menu</a>
@@ -45,7 +45,7 @@
           <a class="nav-link" href="aboutus.html">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active font-weight-bold" href="contact.html">Contact</a>
+          <a class="nav-link" href="contact.html">Contact</a>
         </li>
         <li>
           <a href="kart.html">
@@ -58,78 +58,71 @@
 
 
 
-<body>
-  <div class="container mt-5">
-      <h1 class="text-center contact-title">Contact Us</h1>
-      <p class="text-center">Any question or remarks? Just write us a message!</p>
-      <div class="contact-blocks">
-          <div class="contact-block contact-info">
-              <h4>Contact Information</h4>
-              <p><i class="fa fa-phone"></i> +1012 3456 789</p>
-              <p><i class="fa fa-envelope"></i> littleveganfest@gmail.com</p>
-              <p><i class="fa fa-map-marker addresse"></i> 132 rue des palmiers, toulouse 31245, France</p>
-              <div class="social-icons">
-                  <a href="https://www.twitter.com"><i class="fa fa-twitter" style="font-size: 50px;"></i></a>
-                  <a href="https://www.instagram.com"><i class="fa fa-instagram" style="font-size: 50px;"></i></a>
-                  <a href="https://www.facebook.com"><i class="fa fa-facebook-f" style="font-size: 50px;"></i></a>
-              </div>
-          </div>
-          <div class="contact-block contact-form">
-              <form>
-                  <div class="form-row">
-                      <div class="form-group col-md-6">
-                          <label for="firstName">First Name</label>
-                          <input type="text" class="form-control" id="firstName" placeholder="John">
-                      </div>
-                      <div class="form-group col-md-6">
-                          <label for="lastName">Last Name</label>
-                          <input type="text" class="form-control" id="lastName" placeholder="Jones">
-                      </div>
-                  </div>
-                  <div class="form-row">
-                      <div class="form-group col-md-6">
-                          <label for="email">Email</label>
-                          <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
-                      </div>
-                      <div class="form-group col-md-6">
-                          <label for="phone">Phone Number</label>
-                          <input type="tel" class="form-control" id="phone" placeholder="+0 0 00 00 00 00">
-                      </div>
-                  </div>
-                  <div class="form-group">
-                      <label>Select Subject</label>
-                      <div>
-                          <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="subject" id="menu" value="menu">
-                              <label class="form-check-label" for="menu">Menu</label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="subject" id="events" value="events">
-                              <label class="form-check-label" for="events">Events</label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="subject" id="workshops" value="workshops">
-                              <label class="form-check-label" for="workshops">Workshops</label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="subject" id="other" value="other">
-                              <label class="form-check-label" for="other">Other</label>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="form-group">
-                      <label for="message">Message</label>
-                      <textarea class="form-control" id="message" rows="4" placeholder="Write your message..."></textarea>
-                  </div>
-                  <div class="send-messag-button">
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                  </div>
-              </form>
-          </div>
-      </div>
-  </div>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</body>
+
+
+
+
+
+
+
+
+
+  <body>
+
+    <div class="container">
+        <div class="restaurant-map">
+            <h1><b>Our Restaurants</b></h1>
+            <img src="../assets/croatia_map.jpg" alt="Map of Restaurants" class="img-fluid">
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card restaurant-card">
+                    <img src="../assets/restaurant_location.png" alt="Varazdin's little vegan restaurant">
+                    <div class="card-body">
+                        <div class="restaurant-title">Varazdin's little vegan restaurant</div>
+                        <div class="restaurant-contact">Tel: 00 00 00 00 00</div>
+                        <div class="restaurant-address">Address: 12 Varazdin's street, Varazdin, 42000, Croatia</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card restaurant-card">
+                    <img src="../assets/restaurant_location.png" alt="Zagreb's little vegan restaurant">
+                    <div class="card-body">
+                        <div class="restaurant-title">Zagreb's little vegan restaurant</div>
+                        <div class="restaurant-contact">Tel: 00 00 00 00 00</div>
+                        <div class="restaurant-address">Address: 12 Zagreb's street, Zagreb, 10000, Croatia</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card restaurant-card">
+                    <img src="../assets/restaurant_location.png" alt="Split's little vegan restaurant">
+                    <div class="card-body">
+                        <div class="restaurant-title">  The Split's little vegan restaurant</div>
+                        <div class="restaurant-contact">Tel: 00 00 00 00 00</div>
+                        <div class="restaurant-address">Address: 12 Split's street, Split, 21000, Croatia</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card restaurant-card">
+                    <img src="../assets/restaurant_location.png" alt="Dubrovnik's little vegan restaurant">
+                    <div class="card-body">
+                        <div class="restaurant-title">Dubrovnik's little vegan restaurant</div>
+                        <div class="restaurant-contact">Tel: 00 00 00 00 00</div>
+                        <div class="restaurant-address">Address: 12 Dubrovnik's street, Dubrovnik, 20000, Croatia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+
 
 
 

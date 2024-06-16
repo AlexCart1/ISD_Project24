@@ -53,3 +53,42 @@ body {
 .dish-detail-main-content {
     padding-top: 300px;
 }
+
+.add-to-kart-component {
+    padding-left: 500px;
+}
+
+
+
+
+
+
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.product-price {
+    font-size: 1.5rem;
+    color: #666;
+}
+.product-description {
+    margin-top: 20px;
+}
+.contact-info {
+    margin-top: 40px;
+}
+
+.btn-color-orange {
+    background-color: orange;
+    border-color: orange;
+}
+
+
+
+.customer-review {
+    font-size: 0.8rem;
+    color: gray;
+}
+.rating-stars {
+    color: gold;
+}

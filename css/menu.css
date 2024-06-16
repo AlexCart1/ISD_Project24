@@ -97,3 +97,12 @@ flex: 1 0 auto;
     margin-left: 10px;
     text-decoration: underline;
 }
+
+
+.customer-review {
+    font-size: 0.8rem;
+    color: gray;
+}
+.rating-stars {
+    color: gold;
+}

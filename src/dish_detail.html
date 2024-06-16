@@ -91,19 +91,38 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-5">
-            <div class="col-12">
-                <h2 class="nutrition-info">Nutrition Info</h2>
-                <ul class="list-unstyled">
-                    <li>Calories: 230</li>
-                    <li>Saturated Fat: 0.9g</li>
-                    <li>Polyunsaturated Fat: 1.1g</li>
-                    <li>Cholesterol: 136.9 mg</li>
-                    <li>Sodium: 630.6 mg</li>
-                    <li>Protein: 54.7 g</li>
-                    <li>Potassium: 0.2 g</li>
-                </ul>
+        <div class="row">
+          <div class="row mt-5">
+              <div class="col-12 ">
+                  <h2 class="nutrition-info">Nutrition Info</h2>
+                  <ul class="list-unstyled">
+                      <li>Calories: 230</li>
+                      <li>Saturated Fat: 0.9g</li>
+                      <li>Polyunsaturated Fat: 1.1g</li>
+                      <li>Cholesterol: 136.9 mg</li>
+                      <li>Sodium: 630.6 mg</li>
+                      <li>Protein: 54.7 g</li>
+                      <li>Potassium: 0.2 g</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-12 add-to-kart-component">
+              <h2 class="product-title">Vegan Burger</h2>
+              <div class="customer-review">
+                  <span class="rating-stars">★★★★★</span>
+                  (1000 customer review)
+              </div>
+              <p class="product-price">$18.00</p>
+              <form class="form-inline">
+                  <div class="form-group mb-2">
+                      <label for="quantity" class="sr-only">Quantity</label>
+                      <input type="number" class="form-control" id="quantity" value="1" min="1">
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-color-orange mb-2 ml-2" onclick="showAlert()">Add to cart</button>
+              </form>
             </div>
+          </div>
         </div>
     </main>
 
@@ -166,7 +185,7 @@
         <!-- Copyright -->
         <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);"> <!-- Reduce padding -->
           ©Copyright:
-          <a class="text-white" href="https://mdbootstrap.com/">by Alexandre and Antoine | All Right Reserved</a>
+          <a class="text-white" href="https://github.com/AlexCart1/ISD_Project24/">by Alexandre and Antoine | All Right Reserved</a>
         </div>
         <!-- Copyright -->
       </footer>

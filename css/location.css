@@ -1,0 +1,32 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+.restaurant-map {
+    text-align: center;
+    margin: 200px;
+}
+
+.restaurant-map h1 {
+    font-family: 'Poppins';
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: auto;
+}
+.restaurant-card {
+    margin-bottom: 20px;
+}
+.restaurant-card .card-body {
+    padding: 15px;
+}
+.restaurant-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.restaurant-contact {
+    margin-bottom: 10px;
+}
+.restaurant-address {
+    font-style: italic;
+}

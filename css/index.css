@@ -11,10 +11,11 @@ body, html {
 .homepage-picture {
     width: 100%;
     height: auto;
-    max-width: 100%;
-    max-height: 700px; /* Set the maximum height */
-    overflow: hidden; /* Hide overflow */
+    /* max-width: 100%;
+    max-height: 700px; */
+    overflow: hidden;
 }
+
 .logo-slogan-picture {
     display: block;
     margin: 20px auto; /* Center the image */
@@ -54,4 +55,42 @@ body, html {
 }
 .social-icons img:nth-child(2) {
     margin: 0 150px; /* Add larger space to center Deliveroo icon */
+}
+
+
+
+
+
+.product-image {
+    padding: 5px;
+}
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.product-price {
+    font-size: 1.5rem;
+    color: #000;
+    margin: 15px 0;
+}
+.product-description {
+    font-size: 1rem;
+}
+.customer-review {
+    font-size: 0.8rem;
+    color: gray;
+}
+.rating-stars {
+    color: gold;
+}
+
+.best-seller {
+    padding-bottom: 50px;
+    font-family: 'Cormorant Infant';
+    display: flex;
+    justify-content: center;
+}
+
+.best-seller h1 {
+    font-size: 60px;
 }
