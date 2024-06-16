@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
         initialView: 'dayGridMonth',
         selectable: true,
         dateClick: function(info) {
-            alert('Date: ' + info.dateStr);
             // Vous pouvez ajouter une logique supplémentaire ici, comme l'ouverture d'une fenêtre modale pour la réservation
         },
         events: [
@@ -16,6 +15,16 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
                 title: 'Gluten-Free Cooking Class',
+                start: '2024-09-12',
+                end: '2024-09-12'
+            },
+            {
+                title: 'Pasta preparation and cooking workshop',
+                start: '2024-06-25',
+                end: '2024-06-25'
+            },
+            {
+                title: 'Couple cooking workshop',
                 start: '2024-09-12',
                 end: '2024-09-12'
             }

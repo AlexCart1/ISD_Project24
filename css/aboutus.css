@@ -48,3 +48,11 @@ body, html {
 .social-icons img:nth-child(2) {
     margin: 0 150px; /* Add larger space to center Deliveroo icon */
 }
+
+.our-restaurants {
+    padding: 100px;
+    font-family: 'Cormorant Infant';
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
