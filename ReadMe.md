@@ -33,16 +33,9 @@ The goal of this project is to develop a website that enhances the online presen
   - HTML5
   - CSS3
   - JavaScript
-  - React.js
-- **Backend:**
-  - Node.js
-  - Express.js
-- **Database:**
-  - MongoDB
 - **Other Tools:**
   - Git for version control
-  - Webpack for module bundling
-  - Babel for JavaScript transpiling
+  - Boostrap framework for HTML code samples and tools
 
 ### Installation
 
@@ -56,18 +49,10 @@ To get a local copy up and running, follow these steps:
    ```bash
    cd ISD_Project24
    ```
-3. **Install dependencies:**
-   ```bash
-   npm install
    ```
 4. **Start the development server:**
-   ```bash
-   npm start
-   ```
+  Use a live server extension to launch the project or just open the index.html on google
 
-### Usage
-
-Once the server is running, open your browser and navigate to `http://localhost:3000` to view the website. You can explore the various features and functionalities described above.
 
 ### Contributing
 
@@ -88,7 +73,11 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any questions or inquiries, please contact:
 - **Alexandre Cartiaux**
-- Email: [alex.cartiaux@example.com](mailto:alex.cartiaux@example.com)
+- Email: [acartiaux24@student.foi.hr](mailto:acartiaux24@student.foi.hr)
 - GitHub: [AlexCart1](https://github.com/AlexCart1)
+  
+- **Antoine Atabey**
+- Email: [aatabey23@student.foi.hr](mailto:aatabey23@student.foi.hr)
+- GitHub: [aatabey23](https://github.com/aatabey23)
 
 Thank you for visiting our project!
