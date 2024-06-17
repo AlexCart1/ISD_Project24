@@ -27,6 +27,15 @@ The goal of this project is to develop a website that enhances the online presen
 - **Click & Collect:** Seamless ordering system for quick pickups.
 - **Responsive Design:** Ensures a great user experience across all devices.
 
+### Some visuels of our project
+
+![image](https://github.com/AlexCart1/ISD_Project24/assets/150061139/c095dfdb-da5e-4946-91c8-9096ae78e627)
+
+![image](https://github.com/AlexCart1/ISD_Project24/assets/150061139/2af47b4e-2e05-4222-81c0-9ca63a7ab9c8)
+
+![image](https://github.com/AlexCart1/ISD_Project24/assets/150061139/b7dd5cd2-c735-4fa3-838c-b8376af6d65b)
+
+
 ### Technologies Used
 
 - **Frontend:**
